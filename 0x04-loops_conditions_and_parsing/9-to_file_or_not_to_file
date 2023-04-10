@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-<<com
+true<<com
 Write a Bash script that gives you information about the school file.
 
 Requirements:
@@ -16,8 +16,7 @@ if the file is not a regular file: (nothing)
 com
 
 file="school"
-#for file in *
-#do
+
 	if [ -e "$file" ]; then
 		echo "$file exists."
 	
@@ -39,4 +38,4 @@ file="school"
 	else
 		echo "$file doesn't exist"
 	fi
-#done
+

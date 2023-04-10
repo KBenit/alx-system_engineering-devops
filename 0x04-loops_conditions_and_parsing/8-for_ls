@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-<<com
+true<<com
 Write a Bash script that displays:
 
 The content of the current directory

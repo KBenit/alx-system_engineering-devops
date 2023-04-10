@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-<<com
+true<<com
 Write a Bash script that displays numbers from 1 to 100.
 
 Requirements:
@@ -13,11 +13,11 @@ com
 
 for n in {1..100}
 do
-	if (( $n%3 == 0 && $n%5 == 0 )); then
+	if (( n%3 == 0 && n%5 == 0 )); then
   	 echo "FizzBuzz";
-	elif (( $n%3 == 0 )); then
+	elif (( n%3 == 0 )); then
     	  echo "Fizz"
- 	elif (( $n%5 == 0 )); then
+ 	elif (( n%5 == 0 )); then
     	  echo "Buzz"
 	else
 	  echo "$n"
